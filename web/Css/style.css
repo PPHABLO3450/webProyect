@@ -1,260 +1,439 @@
 /*General Configuration:*/
 
-*
+
+
+
+@media{
+
+	*
+	{
+		margin: 0;
+		padding: 0;
+		cursor: url(../Cursor/default.cur), auto;
+	}
+
+	body
+	{
+		background: #EFFBF5;
+	}
+
+
+	h2
+	{
+		font-size: 28px;
+		
+	}
+
+	p
+	{
+		font-size: 18px;	
+	}
+
+
+	form
+	{
+		color: #240B3B;
+		text-align: left;
+		padding: 2% 0%;
+	}
+
+
+	input[type=text], select, textarea 
+	{
+	    width: 100%;
+	    color: #240B3B;
+	  	padding: 12px;
+	  	border: 1px solid #ccc;
+	  	border-radius: 4px;
+	  	box-sizing: border-box;
+	}
+
+
+	input[type=submit] 
+	{
+	 	background-color: green;
+	  	color: white;
+	  	padding: 10px 40px;
+	  	border: none;
+	  	border-radius: 4px;
+	  	cursor: pointer;
+	}
+
+	input[type=submit]:hover 
+	{
+	  background:black;
+	}
+
+
+
+	/* Configuration of the Table: */
+
+	table 
+	{
+		color: black;
+
+		width: 90%;
+
+		border: 1px solid;
+	  	border-spacing: 1;
+
+	  	background-color: white;
+	}
+
+
+	th, td 
+	{
+		text-align: left;
+		border: 1px solid;
+		padding: 16px;
+	}
+
+
+
+
+
+	/*Configuration of the Header Page: */
+	.header 
+	{
+		width: 100%;
+	  	background-color: #E0F8F7;
+	  	padding: 2% 0%; 
+	}
+
+	.header h2
+	{
+		color: #240B3B;
+		font-size: 40px;
+
+		width: 100%;
+	  	text-align: center;
+	}
+
+	.header p
+	{
+		color: #240B3B;
+		padding: 0.5% 0%;
+		font-size: 20px;
+
+		width: 100%;
+	  	text-align: center;
+	}
+
+
+
+
+
+	/*Configuration of the navegation Menu: */
+
+	.navMenu
+	{
+		top: 0;
+		overflow: hidden;
+	  	background-color: #F5EFFB;
+	  	position: sticky;
+	  	position: -webkit-sticky;
+	}
+
+	.navMenu a
+	{
+		font-size: 25px;
+		color: #240B3B;
+	  	float: left;
+	  	padding: 0.3% 2%;
+	  	text-decoration: none;
+	}
+
+	.navMenu a:hover 
+	{
+		background-color: #F8E0F7;
+	  	transition: 0.3s;
+	}
+
+	.navMenu a.active 
+	{
+		background-color: #F6CEF5;
+	}
+
+
+
+
+	/*Configuration of the pictures: */
+	.image img
+	{
+		width: 100%;
+	}
+
+	.imageCenter img
+	{
+		width: 89%;
+		padding: 0% 5%;
+	}
+
+
+
+
+
+	/*Configuration of specials column */
+	.column 
+	{
+		width: 90%;
+		color: #240B3B;
+		float: left;
+		padding: 2% 5%;
+		background-color: #EFFBF5;
+	}
+
+	.column.Left 
+	{
+		background-color: #E0F8F7;
+		margin: 0% 0.5%;
+		width: 15%;
+	}
+
+	.column.Middle
+	{
+		background-color: #E0F8F7;
+		margin: 0% 0.5%;
+		width: 30%;
+	}
+
+	.column.Middle img
+	{
+		width: 100%;
+	}
+	.column.Rigth
+	{
+		background-color: #E0F8F7;
+		margin: 0% 0.5%;
+		width: 15%;
+	}
+
+	.column.Rigth img
+	{
+		width: 100%;
+	}
+
+	.centerColumn
+	{
+		color: #240B3B;
+		width: 80%;
+		padding: 1% 4.5%;
+		margin: 0.3% 5%;
+
+		float: center;
+		background-color: #E0F8F7;
+	}
+
+
+
+
+	/* Footer */
+	.footer
+	{
+		padding: 2% 0%; 
+		margin-top: 2%;
+	  	text-align: center;
+	  	background-color: #F5EFFB;
+	}
+
+	.footer p
+	{
+
+		color: #585858;
+		width:100%;
+	}
+
+
+	/*Configuration of the warning message: */
+
+	.warning
+	{	
+		background-color:#F5EFFB;
+		color: #170B3B;
+
+		font-size: 15px;
+		text-align: center;
+
+		bottom: 0;
+		width: 100%;	
+	  	overflow: hidden;
+	  	position: fixed;  	
+	}
+
+}
+
+
+
+
+
+@media print 
 {
-	margin: 0;
-	padding: 0;
-	cursor: url(../Cursor/default.cur), auto;
+
+	h2
+	{
+		font-size: 25px;
+		
+	}
+
+	p
+	{
+		font-size: 15px;	
+	}
+
+
+	form
+	{
+		color: #240B3B;
+		text-align: left;
+		padding: 2% 0%;
+	}
+
+
+	input[type=text], select, textarea 
+	{
+	    width: 100%;
+	    color: #240B3B;
+	  	padding: 12px;
+	  	border: 1px solid #ccc;
+	  	border-radius: 4px;
+	  	box-sizing: border-box;
+	}
+
+
+	input[type=submit] 
+	{
+	 	background-color: green;
+	  	color: white;
+	  	padding: 10px 40px;
+	  	border: none;
+	  	border-radius: 4px;
+	  	cursor: pointer;
+	}
+
+	input[type=submit]:hover 
+	{
+	  background:black;
+	}
+
+
+
+	/* Configuration of the Table: */
+
+	table 
+	{
+		color: black;
+
+		width: 90%;
+
+		border: 1px solid;
+	  	border-spacing: 1;
+
+	  	background-color: white;
+	}
+
+
+	th, td 
+	{
+		text-align: left;
+		border: 1px solid;
+		padding: 16px;
+	}
+
+
+	/*Configuration of the Header Page: */
+	.header 
+	{
+		width: 100%;
+	  	background-color: #E0F8F7;
+	  	padding: 2% 0%; 
+	}
+
+	.header h2
+	{
+		color: #240B3B;
+		font-size: 40px;
+
+		width: 100%;
+	  	text-align: center;
+	}
+
+	.header p
+	{
+		color: #240B3B;
+		padding: 0.5% 0%;
+		font-size: 20px;
+
+		width: 100%;
+	  	text-align: center;
+	}
+
+
+	/*Configuration of the pictures: */
+	.image img
+	{
+		width: 100%;
+	}
+
+	.imageCenter img
+	{
+		width: 89%;
+		padding: 0% 5%;
+	}
+
+	/*Configuration of specials column */
+	.column 
+	{
+		width: 90%;
+		float: left;
+		padding: 2% 5%;
+	}
+
+	.column.Left 
+	{
+		margin: 0% 0.5%;
+		width: 15%;
+	}
+
+	.column.Middle
+	{
+		margin: 0% 0.5%;
+		width: 30%;
+	}
+
+	.column.Middle img
+	{
+		width: 100%;
+	}
+	.column.Rigth
+	{
+		margin: 0% 0.5%;
+		width: 15%;
+	}
+
+	.column.Rigth img
+	{
+		width: 100%;
+	}
+
+	.centerColumn
+	{
+		width: 80%;
+		padding: 1% 4.5%;
+		margin: 0.3% 5%;
+
+		float: center;
+	}
+
+	/*Configuration of the elements that i want to show in the print */
+
+	.warning ,.footer ,.footer p, .body, .navMenu, .navMenu a
+	{	
+		display: none;
+	}
+
+	@page {
+	    size: auto;   /* auto is the initial value */
+	    margin: 0% 7%;  /* this affects the margin in the printer settings */
+	}
+
 }
-
-body
-{
-	background: #EFFBF5;
-}
-
-
-h2
-{
-	font-size: 28px;
-	
-}
-
-p
-{
-	font-size: 18px;	
-}
-
-
-form
-{
-	color: #240B3B;
-	text-align: left;
-	padding: 2% 12%;
-}
-
-
-input[type=text], select, textarea 
-{
-    width: 100%;
-    color: #240B3B;
-  	padding: 12px;
-  	border: 1px solid #ccc;
-  	border-radius: 4px;
-  	box-sizing: border-box;
-}
-
-
-input[type=submit] 
-{
- 	background-color: green;
-  	color: white;
-  	padding: 10px 40px;
-  	border: none;
-  	border-radius: 4px;
-  	cursor: pointer;
-}
-
-input[type=submit]:hover 
-{
-  background:black;
-}
-
-
-
-/* Configuration of the Table: */
-
-table 
-{
-	color: black;
-
-	width: 90%;
-
-	border: 1px solid;
-  	border-spacing: 1;
-
-  	background-color: white;
-}
-
-
-th, td 
-{
-	text-align: left;
-	border: 1px solid;
-	padding: 16px;
-}
-
-
-
-
-
-/*Configuration of the Header Page: */
-.header 
-{
-	width: 100%;
-  	background-color: #E0F8F7;
-  	padding: 2% 0%; 
-}
-
-.header h2
-{
-	color: #240B3B;
-	font-size: 40px;
-
-	width: 100%;
-  	text-align: center;
-}
-
-.header p
-{
-	color: #240B3B;
-	padding: 0.5% 0%;
-	font-size: 20px;
-
-	width: 100%;
-  	text-align: center;
-}
-
-
-
-
-
-/*Configuration of the navegation Menu: */
-
-.navMenu
-{
-	top: 0;
-	overflow: hidden;
-  	background-color: #F5EFFB;
-  	position: sticky;
-  	position: -webkit-sticky;
-}
-
-.navMenu a
-{
-	font-size: 25px;
-	color: #240B3B;
-  	float: left;
-  	padding: 0.3% 2%;
-  	text-decoration: none;
-}
-
-.navMenu a:hover 
-{
-	background-color: #F8E0F7;
-  	transition: 0.3s;
-}
-
-.navMenu a.active 
-{
-	background-color: #F6CEF5;
-}
-
-
-
-
-/*Configuration of the pictures: */
-.image img
-{
-	width: 100%;
-}
-
-.imageCenter img
-{
-	width: 89%;
-	padding: 0% 5%;
-}
-
-
-
-
-
-/*Configuration of specials column */
-.column 
-{
-	width: 100%;
-	color: #240B3B;
-	float: left;
-	padding: 2% 4.5%;
-	background-color: #EFFBF5;
-}
-
-.column.Left 
-{
-	background-color: #E0F8F7;
-	margin: 0% 0.5%;
-	width: 15%;
-}
-
-.column.Middle
-{
-	background-color: #E0F8F7;
-	margin: 0% 0.5%;
-	width: 30%;
-}
-
-.column.Middle img
-{
-	width: 100%;
-}
-.column.Rigth
-{
-	background-color: #E0F8F7;
-	margin: 0% 0.5%;
-	width: 15%;
-}
-
-.column.Rigth img
-{
-	width: 100%;
-}
-
-.centerColumn
-{
-	color: #240B3B;
-	width: 80%;
-	padding: 1% 4.5%;
-	margin: 0.3% 5%;
-
-	float: center;
-	background-color: #E0F8F7;
-}
-
-
-
-
-/* Footer */
-.footer
-{
-	padding: 1.5% 0%; 
-	margin-top: 2%;
-  	text-align: center;
-  	background-color: #F5EFFB;
-}
-
-.footer p
-{
-
-	color: #585858;
-	width:100%;
-}
-
-
-/*Configuration of the warning message: */
-
-.warning
-{	
-	background-color:#F5EFFB;
-	color: #170B3B;
-
-	font-size: 10px;
-	text-align: center;
-
-	bottom: 0;
-	width: 100%;	
-  	overflow: hidden;
-  	position: fixed;  	
-}
-
-
-
-
